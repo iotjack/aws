@@ -19,3 +19,10 @@ When a stage is defined on HTTP API, it creates a new path to the backend integr
 | $default | www.mydomain.com | 
 | dev |    www.mydomain.com/dev  |   
 |beta | www.mydomain.com/beta |  
+
+
+## security
+The APIs created with Amazon API Gateway expose HTTPS endpoints only. API Gateway doesn't support unencrypted (HTTP) endpoints. 
+ HTTP APIs support only TLS 1.2.
+
+[How Amazon API Gateway works with IAM](https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html)
